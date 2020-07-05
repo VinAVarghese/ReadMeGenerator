@@ -3,8 +3,7 @@ const util = require("util")
 const inquirer = require("inquirer")
 const generateMarkdown = require("./utils/generateMarkdown.js")
 
-const licenseBadges = ["[![License: BSD](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)", "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)", "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)","![License: Other](https://img.shields.io/badge/license-other-orange.svg)"]
-
+const licenseBadges = ["[![License: BSD](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)", "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)", "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)","![License: See Below](https://img.shields.io/badge/license-other-orange.svg)"]
 
 // function to prompt array of questions for user
 function readMePrompts() {
@@ -47,7 +46,7 @@ function readMePrompts() {
         },
         {
             type: "input",
-            message: "If you are using an alternate license not listed, please manually enter it below or press enter with no text to skip.",
+            message: "If you are using a license not listed, please manually enter it below or press enter with no text to skip.",
             name: "licenseAlt"
         },
         {
@@ -97,8 +96,3 @@ async function init() {
 
 // function call to initialize program
 init();
-
-
-
-// TODO:
-// - Handle edge cases for email prompts?

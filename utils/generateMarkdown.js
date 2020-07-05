@@ -16,10 +16,9 @@ function generateMarkdown(data, badge) {
   ## Contributing
   ${data.contributions}
   ## Tests
-  >${data.test}
+       ${data.test}
   ## License
-  >${data.license}
-  >${data.licenseAlt}
+  >${data.license} ${data.licenseAlt}
   ## Questions
 
   * GitHub: [${data.gitHub}](https://github.com/${data.gitHub})
