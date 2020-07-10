@@ -25,6 +25,8 @@ function generateMarkdown(data, badge) {
   * Email: [${data.email}](mailto:${data.email})
   
   ${data.questions}
+  ## Links/Images
+  ![Screenshot](screenshot.png)
 `
 };
 
