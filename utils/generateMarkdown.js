@@ -26,6 +26,8 @@ function generateMarkdown(data, badge) {
   
   ${data.questions}
   ## Links/Images
+  [Click For Deployed Application](#PlaceholderLink)
+
   ![Screenshot](screenshot.png)
 `
 };
